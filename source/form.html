@@ -173,5 +173,21 @@
         </svg>
       </a>
     </footer>
+    <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "error" -->
+    <div class="modal-wrapper error">
+      <div class="error__modal modal">
+        <h2 class="error__title">Что-то пошло не так!</h2>
+        <p class="error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button--ok">Ок</button>
+      </div>
+    </div>
+    <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "success" -->
+    <div class="modal-wrapper success">
+      <div class="success__modal">
+        <h2 class="success__title">Ваш отзыв отправлен!</h2>
+        <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal__button--close">Закрыть окно</button>
+      </div>
+    </div>
   </body>
 </html>
