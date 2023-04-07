@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="body page__body">
     <header class="page__header header">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/index/logo-sedona.svg" width="185" height="96" alt="Логотип в шапке сайта.">
@@ -34,16 +35,16 @@
         <h1 class="visually-hidden">Welcome</h1>
         <img class="hero__welcome" src="img/index/hero-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks'.">
         <img class="hero__divider" src="img/index/hero-divider.svg" width="320" height="57" alt="Декор фона.">
-        <h2 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="hero__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="advantages__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__number">— №1 —</span>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages__item advantages__item--blue">
+            <img class="advantages__divider" src="img/index/advantages-divider.svg" width="320" height="37" alt="Декор фона преимуществ.">
+            <h3 class="advantages__title advantages__title--white">Настоящий городок</h3>
+            <span class="advantages__number advantages__number--white">— №1 —</span>
+            <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages__image" src="img/index/description-house.jpg" width="320" height="260" alt="Здание с американским флагом.">
             <ul class="advantages__sublist">
               <li class="advantages__subitem">
@@ -60,8 +61,10 @@
                   <path d="M27.5443 24.6975H25.978V26.6815H27.5443V24.6975Z" fill="#81B3D2"/>
                   <path d="M30.6769 24.6975H29.1106V26.6815H30.6769V24.6975Z" fill="#81B3D2"/>
                 </svg>
-                <h3 class="advantages__subtitle">Жильё</h3>
-                <p class="advantages__subdescription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <div class="advantages__wrapper-subtext">
+                  <h3 class="advantages__subtitle">Жильё</h3>
+                  <p class="advantages__subdescription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
               </li>
               <li class="advantages__subitem">
                 <svg class="advantages__subicon" width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,30 +75,34 @@
                   <path d="M15.8005 6.67871C16.3803 6.67871 16.8504 6.22515 16.8504 5.66565C16.8504 5.10615 16.3803 4.65259 15.8005 4.65259C15.2207 4.65259 14.7506 5.10615 14.7506 5.66565C14.7506 6.22515 15.2207 6.67871 15.8005 6.67871Z" fill="#81B3D2"/>
                   <path d="M24.1995 6.67871C24.7793 6.67871 25.2493 6.22515 25.2493 5.66565C25.2493 5.10615 24.7793 4.65259 24.1995 4.65259C23.6196 4.65259 23.1496 5.10615 23.1496 5.66565C23.1496 6.22515 23.6196 6.67871 24.1995 6.67871Z" fill="#81B3D2"/>
                 </svg>
-                <h3 class="advantages__subtitle">Еда</h3>
-                <p class="advantages__subdescription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <div class="advantages__wrapper-subtext">
+                  <h3 class="advantages__subtitle">Еда</h3>
+                  <p class="advantages__subdescription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </div>
               </li>
               <li class="advantages__subitem">
                 <svg class="advantages__subicon" width="32" height="38" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30.5778 11.2058H30.527H18.1841C25.0921 7.76156 25.6508 5.58358 25.3968 4.36796C24.8381 2.39259 22.5524 0.873068 20.419 1.68348C17.6254 2.74714 16.8635 6.9005 16.1016 9.88889C15.1365 6.84985 14.2222 3.0004 12.0381 1.02502C11.4286 0.467863 10.5143 -0.0892942 9.14286 0.0120071C7.11111 0.21461 4.21587 2.69649 5.43492 5.48228C6.55238 8.16676 10.2603 9.88888 12.7492 11.2565H1.42222C0.609524 11.2565 0 11.9149 0 12.6747V18.3475C0 19.158 0.660317 19.7658 1.42222 19.7658H1.5746V38H30.527V19.7658H30.5778C31.3905 19.7658 32 19.1073 32 18.3475V12.6747C32 11.8643 31.3397 11.2058 30.5778 11.2058ZM21.2317 2.94975C22.2984 2.79779 23.7206 3.6082 23.873 4.57057C24.0762 5.93813 22.1968 7.2044 21.3333 7.76156C20.0635 8.62262 18.8444 9.07847 17.6762 9.78758C18.0825 7.91351 18.946 3.25365 21.2317 2.94975ZM9.75238 7.91351C8.63492 7.15375 6.50159 5.68488 6.55238 4.01341C6.60317 2.18999 9.44762 0.721116 10.9714 2.08868C12.9016 3.76016 13.8159 7.66026 14.527 10.3954C12.9016 9.58498 11.3778 8.97717 9.75238 7.91351ZM12.7492 36.4805H3.04762V19.7658H12.7492V36.4805ZM12.7492 18.2462H1.52381V12.7253H12.7492V18.2462ZM17.8286 36.4805H14.2222V12.7253H17.8286V36.4805ZM29.0032 36.4805H19.3524V19.7658H29.054V36.4805H29.0032ZM30.4762 18.2462H19.3524V12.7253H30.4762V18.2462Z" fill="#81B3D2"/>
                 </svg>
-                <h3 class="advantages__subtitle">Сувениры</h3>
-                <p class="advantages__subdescription">Не только китайского, но и местного производства!</p>
+                <div class="advantages__wrapper-subtext">
+                  <h3 class="advantages__subtitle">Сувениры</h3>
+                  <p class="advantages__subdescription">Не только китайского, но и местного производства!</p>
+                </div>
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <span class="advantages__number">— №2 —</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="advantages__item advantages__item--blue">
+            <h3 class="advantages__title advantages__title--white">Там есть мост дьявола</h3>
+            <span class="advantages__number advantages__number--white">— №2 —</span>
+            <p class="advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantages__image" src="img/index/description-canyon.jpg" width="320" height="260" alt="Гранд-Каньон.">
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--before">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--before">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__number">— №4 —</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>

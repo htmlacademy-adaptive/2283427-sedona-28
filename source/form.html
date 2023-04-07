@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page__header header">
@@ -34,12 +35,12 @@
         <h1 class="visually-hidden">Форма отправки отзывов</h1>
         <img class="review-hero__welcome" src="img/catalog/hero-welcome-gallery.svg" width="229" height="39" alt="Sedona.">
         <img class="review-hero__divider" src="img/index/hero-divider.svg" width="320" height="57" alt="Декор фона.">
-        <h2 class="review-hero__title">Оставьте свой отзыв</h2>
-        <p class="review-hero__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="review">
+        <h2 class="review__title">Оставьте свой отзыв</h2>
+        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Представьтесь:</h2>
             <ul class="form__list">
               <li class="form__item">
@@ -56,20 +57,26 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Контактная информация:</h2>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__input-icon-label" for="phone">Контактный телефон*:</label>
-                <input class="form__input-icon" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                <div class="form__wrapper-phone">
+                  <input class="form__input-icon" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                  <div class="form__icon-phone"></div>
+                </div>
               </li>
               <li class="form__item">
                 <label class="form__input-icon-label" for="e-mail">Электронная почта*:</label>
-                <input class="form__input-icon" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                <div class="form__wrapper-email">
+                  <input class="form__input-icon" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                  <div class="form__icon-email"></div>
+                </div>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Ваше общее впечатление:</h2>
             <ul class="form__radio-list">
               <li class="form__radio-item">
@@ -92,7 +99,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Посещенные достопримечательности:</h2>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
@@ -121,7 +128,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Опишите свои эмоции:</h2>
             <textarea class="form__textarea" cols="27" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
@@ -179,20 +186,20 @@
       </a>
     </footer>
     <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "is-active" -->
-    <div class="modal">
+    <div class="modal is-active">
       <div class="modal__error">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button">Ок</button>
+        <button class="modal__button-ok">Ок</button>
       </div>
     </div>
     <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "is-active" -->
     <div class="modal">
       <div class="modal__success">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal__button-wrapper">
-          <button class="modal__button">Закрыть окно</button>
+          <button class="modal__button-close">Закрыть окно</button>
         </div>
       </div>
     </div>
