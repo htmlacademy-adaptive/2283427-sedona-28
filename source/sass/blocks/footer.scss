@@ -1,33 +1,16 @@
-.page__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-}
-
 .footer__hashtag {
   margin: 0 auto;
   margin-top: 33px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: #000000;
+  color: $color-black;
   text-transform: uppercase;
-}
-
-.social__list {
-  display: flex;
-  gap: 6px;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 
 .footer__link-academy {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-decoration: none;
   gap: 12px;
   margin-bottom: 33px;
@@ -35,11 +18,10 @@
 
 .footer__link-text {
   display: flex;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: $color-black;
 }

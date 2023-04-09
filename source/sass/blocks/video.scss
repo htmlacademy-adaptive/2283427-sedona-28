@@ -1,6 +1,5 @@
 .video {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -13,7 +12,6 @@
   text-transform: uppercase;
   margin: 17px auto 26px;
   padding: 0;
-  max-width: 300px;
 }
 
 .video__description {
@@ -25,12 +23,10 @@
   margin: 0 auto;
   padding: 0;
   margin-bottom: 38px;
-  max-width: 300px;
 }
 
 .video__wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }

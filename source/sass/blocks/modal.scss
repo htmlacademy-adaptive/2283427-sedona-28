@@ -16,31 +16,32 @@
 
 .modal__error {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #ffffff;
+  align-items: center;
+  background-color: $color-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  max-width: 400px;
 }
 
 .modal__success {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #ffffff;
+  align-items: center;
+  background-color: $color-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  max-width: 640px;
 }
 
 .modal__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: $color-black;
   margin: 36px 38px;
   padding: 0;
   text-transform: uppercase;
-  max-width: 244px;
   text-align: center;
 }
 
@@ -51,16 +52,19 @@
   margin: 0 38px 50px;
   padding: 0;
   text-transform: uppercase;
-  max-width: 244px;
   text-align: center;
 }
 
 .modal__button-ok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 180px;
   min-height: 58px;
+  max-width: 272px;
   border: none;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $color-blue;
+  color: $color-white;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -71,19 +75,22 @@
 
 .modal__button-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-color: $color-light-grey;
   min-height: 98px;
-  width: 320px;
+  padding: 20px;
+  width: 100%;
 }
 
 .modal__button-close {
-  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 58px;
   border: none;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $color-blue;
+  color: $color-white;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

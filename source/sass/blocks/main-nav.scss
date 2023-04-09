@@ -1,8 +1,12 @@
 .main-nav {
-  display: none;
-  align-items: center;
+  display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.main-nav__toggle {
+  width: 100px;
+  height: 30px;
 }
 
 .main-nav__list {
@@ -13,27 +17,25 @@
 
 .main-nav__item {
   display: flex;
-  align-items: center;
   justify-content: center;
   min-height: 55px;
-  width: 320px;
-  background-color: #81b3d2;
+  width: 100%;
+  background-color: $color-blue;
   mix-blend-mode: normal;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2); ;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .main-nav__link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   min-height: 55px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 17px auto 12px;
+  padding: 17px 82px 12px;
 }

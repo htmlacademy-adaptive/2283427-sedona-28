@@ -32,13 +32,15 @@
     </header>
     <main class="page__main">
       <section class="review-hero">
-        <h1 class="visually-hidden">Форма отправки отзывов</h1>
-        <img class="review-hero__welcome" src="img/catalog/hero-welcome-gallery.svg" width="229" height="39" alt="Sedona.">
-        <img class="review-hero__divider" src="img/index/hero-divider.svg" width="320" height="57" alt="Декор фона.">
+        <div class="review-hero__wrapper">
+          <h1 class="visually-hidden">Форма отправки отзывов</h1>
+          <img class="review-hero__welcome" src="img/catalog/hero-welcome-gallery.svg" width="229" height="39" alt="Sedona.">
+          <img class="review-hero__divider" src="img/index/hero-divider.svg" width="320" height="57" alt="Декор фона.">
+        </div>
+        <h2 class="review-hero__title">Оставьте свой отзыв</h2>
+        <p class="review-hero__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="review">
-        <h2 class="review__title">Оставьте свой отзыв</h2>
-        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__fieldset form__fieldset--before">
             <h2 class="form__legend">Представьтесь:</h2>
@@ -186,7 +188,7 @@
       </a>
     </footer>
     <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "is-active" -->
-    <div class="modal is-active">
+    <div class="modal">
       <div class="modal__error">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -194,7 +196,7 @@
       </div>
     </div>
     <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "is-active" -->
-    <div class="modal">
+    <div class="modal is-active">
       <div class="modal__success">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
