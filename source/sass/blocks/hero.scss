@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
   margin: 90px auto 28px;
+  width: 282px;
+  height: 214px;
 }
 
 .hero__divider {
@@ -38,4 +40,41 @@
   text-transform: uppercase;
   margin: 35px auto 16px;
   padding: 0;
+}
+
+// Tablet
+
+@media (min-width: $tablet-width) {
+  .hero__welcome {
+    width: 461px;
+    height: 350px;
+    margin: 77px auto 34px;
+  }
+
+  .hero__heading {
+    font-size: 21px;
+    margin: 47px auto 0;
+  }
+
+  .hero__text {
+    margin: 32px auto 55px;
+  }
+}
+
+// Desktop
+
+@media (min-width: $desktop-width) {
+  .hero__welcome {
+    width: 460px;
+    height: 350px;
+    margin: 78px auto 33px;
+  }
+
+  .hero__heading {
+    margin: 59px auto 0;
+  }
+
+  .hero__text {
+    margin: 32px auto 44px;
+  }
 }

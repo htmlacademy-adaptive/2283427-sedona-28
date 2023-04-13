@@ -11,6 +11,7 @@
 .footer__link-academy {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
   gap: 12px;
   margin-bottom: 33px;
@@ -24,4 +25,16 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-black;
+}
+
+// Tablet
+
+@media (min-width: $tablet-width) {
+  .footer__hashtag {
+    margin: 0;
+  }
+
+  .footer__link-academy {
+    margin: 0;
+  }
 }

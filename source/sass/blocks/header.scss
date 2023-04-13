@@ -1,9 +1,22 @@
 .header__logo {
   display: flex;
   justify-content: center;
+  position: absolute;
 }
 
 .header__logo-image {
   width: 185px;
   height: 96px;
+  position: absolute;
+}
+
+//  Tablets
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

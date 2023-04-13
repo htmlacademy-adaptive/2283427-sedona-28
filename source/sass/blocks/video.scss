@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .video__title {
@@ -29,4 +30,29 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+// Tablet
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 0 60px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin: 57px auto 32px;
+  }
+
+  .video__description {
+    margin-bottom: 90px;
+  }
+}
+
+// Desktop
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 0 200px;
+  }
 }
