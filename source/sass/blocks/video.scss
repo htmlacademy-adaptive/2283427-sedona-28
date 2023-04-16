@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 17px 20px 0;
 }
 
 .video__title {
@@ -10,7 +11,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 17px auto 26px;
+  margin: 0 auto 26px;
   padding: 0;
 }
 
@@ -20,13 +21,39 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 38px;
   padding: 0;
-  margin-bottom: 38px;
 }
 
 .video__wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+// Tablet
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 57px 60px 40px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+    max-width: 450px;
+  }
+
+  .video__description {
+    margin-bottom: 90px;
+    max-width: 450px;
+  }
+}
+
+// Desktop
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 66px 200px 84px;
+  }
 }

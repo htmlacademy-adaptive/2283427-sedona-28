@@ -5,14 +5,33 @@
 }
 
 .main-nav__toggle {
-  width: 100px;
-  height: 30px;
+  display: block;
+  border: none;
+  background-image: url("../img/index/icon-menu-burger.svg");
+  background-color: transparent;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  right: 20px;
 }
 
 .main-nav__list {
+  display: none;
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.main-nav__list.main-nav__list--open {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
 
 .main-nav__item {
@@ -21,7 +40,6 @@
   min-height: 55px;
   width: 100%;
   background-color: $color-blue;
-  mix-blend-mode: normal;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -38,4 +56,78 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 17px 82px 12px;
+}
+
+.main-nav__item--grid-empty {
+  display: none;
+}
+
+// Tablets
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .main-nav__item--grid-main {
+    grid-column: 1 / 2;
+  }
+
+  .main-nav__item--grid-catalog {
+    grid-column: 2 / 3;
+  }
+
+  .main-nav__list--after::after {
+    grid-column: 3 / 4;
+  }
+
+  .main-nav__item--grid-form {
+    grid-column: 4 / 5;
+  }
+
+  .main-nav__item--grid-academy {
+    grid-column: 5 / 6;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    display: flex;
+    min-height: 56px;
+    min-width: 153px;
+    background-color: $color-white;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    align-items: center;
+    min-width: 153px;
+    min-height: 56px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-black;
+    padding: 18px 0 17px;
+  }
+
+  .main-nav__link--current {
+    color: #766357;
+  }
+}
+
+//  Desktop
+
+
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    min-width: 240px;
+  }
 }
