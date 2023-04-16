@@ -17,15 +17,12 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <!-- Чтобы открыть меню, нужно добавить класс main-nav__list--open -->
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--after">
             <li class="main-nav__item main-nav__item--grid-main">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--grid-catalog">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item main-nav__item--grid-empty">
-              <span class="visually-hidden"></span>
             </li>
             <li class="main-nav__item main-nav__item--grid-form">
               <a class="main-nav__link  main-nav__link--current" href="form.html">Форма отзыва</a>
@@ -41,10 +38,11 @@
           <div class="review-hero__wrapper">
             <h1 class="visually-hidden">Форма отправки отзывов</h1>
             <img class="review-hero__welcome" src="img/catalog/hero-welcome-gallery.svg" width="229" height="39" alt="Sedona.">
-            <img class="review-hero__divider" src="img/index/hero-divider.svg" width="320" height="57" alt="Декор фона.">
           </div>
-          <h2 class="review-hero__title">Оставьте свой отзыв</h2>
-          <p class="review-hero__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="review-hero__title-wrapper">
+            <h2 class="review-hero__title">Оставьте свой отзыв</h2>
+            <p class="review-hero__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
         </section>
         <section class="review">
           <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
@@ -140,8 +138,8 @@
               <h2 class="form__legend">Опишите свои эмоции:</h2>
               <textarea class="form__textarea" cols="27" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="form__submit" type="submit">Отправить отзыв</button>
-            <span class="form__clue">* — обязательные поля</span>
+            <button class="form__submit form__submit--grid-submit" type="submit">Отправить отзыв</button>
+            <span class="form__clue form__clue--grid-clue">* — обязательные поля</span>
           </form>
         </section>
       </main>

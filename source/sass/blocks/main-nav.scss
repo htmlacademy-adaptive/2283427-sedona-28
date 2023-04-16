@@ -73,7 +73,7 @@
 
   .main-nav__list {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .main-nav__item--grid-main {
@@ -84,17 +84,16 @@
     grid-column: 2 / 3;
   }
 
+  .main-nav__list--after::after {
+    grid-column: 3 / 4;
+  }
+
   .main-nav__item--grid-form {
     grid-column: 4 / 5;
   }
 
   .main-nav__item--grid-academy {
     grid-column: 5 / 6;
-  }
-
-  .main-nav__item--grid-empty {
-    grid-column: 3 / 4;
-    min-width: 153px;
   }
 
   .main-nav__toggle {
@@ -128,10 +127,6 @@
 
 
 @media (min-width: $desktop-width) {
-  .main-nav__item--grid-empty {
-    min-width: 240px;
-  }
-
   .main-nav__item {
     min-width: 240px;
   }

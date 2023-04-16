@@ -1,3 +1,7 @@
+.search {
+  padding: 60px 0 0;
+}
+
 .search__wrapper {
   display: flex;
   justify-content: center;
@@ -12,7 +16,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 38px auto 0;
+  margin: 0 0 25px 0;
   padding: 0;
 }
 
@@ -22,7 +26,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  margin: 25px auto 32px;
+  margin: 0 0 32px 0;
   padding: 0;
 }
 
@@ -51,11 +55,13 @@
 @media (min-width: $tablet-width) {
   .search__title {
     font-size: 30px;
-    margin-top: 60px;
+    margin-bottom: 34px;
+    max-width: 435px;
   }
 
   .search__description {
-    margin: 34px auto 47px;
+    margin-bottom: 47px;
+    max-width: 435px;
   }
 
   .search__link {
@@ -65,5 +71,6 @@
 
   .search__wrapper {
     margin: 0 auto;
+    padding: 0;
   }
 }

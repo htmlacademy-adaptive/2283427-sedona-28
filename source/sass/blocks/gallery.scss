@@ -99,11 +99,24 @@
   .gallery__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 58px;
+  }
+
+  .gallery__card {
+    height: 347px;
+    position: relative;
+  }
+
+  .gallery__card-title {
+    max-width: 230px;
+  }
+
+  .gallery__like-text {
+    max-width: 70px;
   }
 
   .gallery__card--grid-spaces {
     grid-column: 1 / -1;
+    height: 480px;
   }
 
   .gallery__card--before::before {
@@ -115,11 +128,15 @@
   }
 
   .gallery__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
+    width: 100%;
   }
 
   .gallery__image {
@@ -143,10 +160,19 @@
     padding: 0;
   }
 
+  .gallery__card-title {
+    max-width: 280px;
+    color: $color-white;
+  }
+
+  .gallery__like-text {
+    max-width: 80px;
+    color: $color-white;
+  }
+
   .gallery__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 62px;
   }
 
   .gallery__wrapper {
@@ -157,36 +183,31 @@
     background-image: url("../../img/catalog/gallery-content-road.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    height: 400px;
   }
 
   .gallery__card--grid-plants {
     background-image: url("../../img/catalog/gallery-content-plants.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 267px;
   }
 
   .gallery__card--grid-road {
     background-image: url("../../img/catalog/gallery-content-road-to-north.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 267px;
   }
 
   .gallery__card--grid-bridge {
     background-image: url("../../img/catalog/gallery-content-devils-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .gallery__card-title {
-    color: $color-white;
+    height: 267px;
   }
 
   .gallery__image-author {
-    color: $color-white;
-  }
-
-  .gallery__like-text {
     color: $color-white;
   }
 

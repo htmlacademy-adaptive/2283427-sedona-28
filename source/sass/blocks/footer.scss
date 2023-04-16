@@ -1,6 +1,7 @@
 .footer__hashtag {
-  margin: 0 auto;
-  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -14,7 +15,6 @@
   align-items: center;
   text-decoration: none;
   gap: 12px;
-  margin-bottom: 33px;
 }
 
 .footer__link-text {
