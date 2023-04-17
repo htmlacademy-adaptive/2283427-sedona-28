@@ -307,66 +307,83 @@
     position: relative;
   }
 
-  .form__fieldset--before::before {
-    display: none;
-  }
-
   .form__fieldset--after::after {
     content: "";
     width: 1px;
-    height: 90%;
+    height: 103%;
     background-color: #e5e5e5;
     position: absolute;
     top: 0;
     right: 0;
   }
 
-  .form__radio-list--before {
+  .form__fieldset--before::before {
+    display: none;
+  }
+
+  .form__legend--psevdo {
     position: relative;
+    display: block;
   }
 
-  .form__radio-list--before::before {
+  .form__fieldset--grid-impression .form__legend--psevdo::before {
     content: "";
     position: absolute;
-    width: 20%;
+    width: 123px;
     height: 1px;
     background-color: #e5e5e5;
-    top: -40px;
-    right: 0;
+    top: 50%;
+    left: -188px;
   }
 
-  .form__radio-list--after::after {
+  .form__fieldset--grid-impression .form__legend--psevdo::after {
     content: "";
     position: absolute;
-    width: 20%;
+    width: 123px;
     height: 1px;
     background-color: #e5e5e5;
-    top: -40px;
-    left: 0;
+    top: 50%;
+    right: -188px;
   }
 
-  .form__checkbox-list--before {
-    position: relative;
-  }
-
-  .form__checkbox-list--before::before {
+  .form__fieldset--grid-attractions .form__legend--psevdo::before {
     content: "";
     position: absolute;
-    width: 20%;
+    width: 123px;
     height: 1px;
     background-color: #e5e5e5;
-    top: -40px;
-    right: 0;
+    top: 50%;
+    right: -123px;
   }
 
-  .form__checkbox-list--after::after {
+  .form__fieldset--grid-attractions .form__legend--psevdo::after {
     content: "";
     position: absolute;
-    width: 20%;
+    width: 123px;
     height: 1px;
     background-color: #e5e5e5;
-    top: -40px;
-    left: 0;
+    top: 50%;
+    left: -123px;
+  }
+
+  .form__fieldset--grid-emotions .form__legend--psevdo::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    right: -199px;
+  }
+
+  .form__fieldset--grid-emotions .form__legend--psevdo::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    left: -199px;
   }
 
   .form__checkbox-list {
@@ -451,5 +468,65 @@
 
   .form__clue {
     margin: 0 96px 0 auto;
+  }
+
+  .form__fieldset--grid-impression .form__legend--psevdo::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    left: -344px;
+  }
+
+  .form__fieldset--grid-impression .form__legend--psevdo::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    right: -344px;
+  }
+
+  .form__fieldset--grid-attractions .form__legend--psevdo::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    right: -279px;
+  }
+
+  .form__fieldset--grid-attractions .form__legend--psevdo::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    left: -279px;
+  }
+
+  .form__fieldset--grid-emotions .form__legend--psevdo::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    right: -355px;
+  }
+
+  .form__fieldset--grid-emotions .form__legend--psevdo::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 50%;
+    left: -355px;
   }
 }

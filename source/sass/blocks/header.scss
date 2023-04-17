@@ -5,10 +5,11 @@
 }
 
 .header__logo-image {
+  display: block;
   width: 185px;
   height: 96px;
   position: absolute;
-  z-index: 20;
+  z-index: 5;
 }
 
 //  Tablet
