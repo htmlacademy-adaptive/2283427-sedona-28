@@ -1,19 +1,26 @@
 .review-hero__wrapper {
-  background-image: url("../img/index/hero-background.jpg");
+  background-image: url("../../img/index/hero-background.jpg");
   background-color: $color-blue;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 -230px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 0 36px 0;
+  padding: 52px 0 10px;
+}
+
+@media (min-resolution: 2dppx) {
+  .review-hero__wrapper {
+    background-image: url("../../img/index/hero-background@2x.jpg");
+  }
 }
 
 .review-hero__welcome {
   display: flex;
   justify-content: center;
-  margin: 52px auto 10px;
+  margin: 0 auto;
   width: 229px;
   height: 39px;
 }
@@ -55,14 +62,22 @@
 // Tablet
 
 @media (min-width: $tablet-width) {
+  .review-hero__wrapper {
+    background-image: url("../../img/index/hero-background-tablet.jpg");
+    padding: 95px 0 60px;
+    margin-bottom: 64px;
+  }
+
   .review-hero__welcome {
-    margin: 95px auto 60px;
+    margin: 0 auto;
     width: 457px;
     height: 78px;
   }
 
-  .review-hero__wrapper {
-    margin-bottom: 64px;
+  @media (min-resolution: 2dppx) {
+    .review-hero__wrapper {
+      background-image: url("../../img/index/hero-background-tablet@2x.jpg");
+    }
   }
 
   .review-hero__title {
@@ -84,14 +99,22 @@
 // Desktop
 
 @media (min-width: $desktop-width) {
+  .review-hero__wrapper {
+    background-image: url("../../img/index/hero-background-desktop.jpg");
+    margin-bottom: 115px;
+    padding: 101px 0 63px;
+  }
+
   .review-hero__welcome {
-    margin: 101px auto 63px;
+    margin: 0 auto;
     width: 460px;
     height: 80px;
   }
 
-  .review-hero__wrapper {
-    margin-bottom: 115px;
+  @media (min-resolution: 2dppx) {
+    .review-hero__wrapper {
+      background-image: url("../../img/index/hero-background-desktop@2x.jpg");
+    }
   }
 
   .review-hero__title {

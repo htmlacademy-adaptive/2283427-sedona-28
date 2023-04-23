@@ -4,7 +4,7 @@
 
 .gallery__cards {
   padding: 0;
-  margin: 0;
+  margin: 0 -20px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .gallery__card--before::before {
@@ -99,11 +100,17 @@
   .gallery__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .gallery__picture {
+    height: 347px;
   }
 
   .gallery__card {
     height: 347px;
     position: relative;
+    padding: 0;
   }
 
   .gallery__card-title {
@@ -116,6 +123,10 @@
 
   .gallery__card--grid-spaces {
     grid-column: 1 / -1;
+    height: 480px;
+  }
+
+  .gallery__picture--spaces {
     height: 480px;
   }
 
@@ -141,6 +152,11 @@
 
   .gallery__image {
     margin: 0;
+    height: 267px;
+  }
+
+  .gallery__image--grid-spaces {
+    height: 400px;
   }
 
   .gallery__card-like {
@@ -180,35 +196,58 @@
   }
 
   .gallery__card--grid-spaces {
-    background-image: url("../../img/catalog/gallery-content-road.jpg");
+    background-image: url("../../img/catalog/gallery-content-road-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 400px;
   }
 
   .gallery__card--grid-plants {
-    background-image: url("../../img/catalog/gallery-content-plants.jpg");
+    background-image: url("../../img/catalog/gallery-content-plants-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 267px;
   }
 
   .gallery__card--grid-road {
-    background-image: url("../../img/catalog/gallery-content-road-to-north.jpg");
+    background-image: url("../../img/catalog/gallery-content-road-to-north-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 267px;
   }
 
   .gallery__card--grid-bridge {
-    background-image: url("../../img/catalog/gallery-content-devils-bridge.jpg");
+    background-image: url("../../img/catalog/gallery-content-devils-bridge-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 267px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gallery__card--grid-spaces {
+      background-image: url("../../img/catalog/gallery-content-road-desktop@2x.jpg");
+    }
+
+    .gallery__card--grid-plants {
+      background-image: url("../../img/catalog/gallery-content-plants-desktop@2x.jpg");
+    }
+
+    .gallery__card--grid-road {
+      background-image: url("../../img/catalog/gallery-content-road-to-north-desktop@2x.jpg");
+    }
+
+    .gallery__card--grid-bridge {
+      background-image: url("../../img/catalog/gallery-content-devils-bridge-desktop@2x.jpg");
+    }
   }
 
   .gallery__image-author {
     color: $color-white;
+    margin: 0;
   }
 
   .gallery__like-icon {
