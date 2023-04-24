@@ -1,12 +1,20 @@
 .hero__wrapper {
-  background-image: url("../img/index/hero-background.jpg");
+  background-image: url("../../img/index/hero-background.jpg");
   background-color: $color-blue;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 32px;
+  padding: 90px 0 28px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__wrapper {
+    background-image: url("../../img/index/hero-background@2x.jpg");
+  }
 }
 
 .hero__title-wrapper {
@@ -21,7 +29,7 @@
 .hero__welcome {
   display: flex;
   justify-content: center;
-  margin: 90px auto 28px;
+  margin: 0 auto;
   width: 282px;
   height: 214px;
 }
@@ -50,14 +58,22 @@
 // Tablet
 
 @media (min-width: $tablet-width) {
+  .hero__wrapper {
+    background-image: url("../../img/index/hero-background-tablet.jpg");
+    padding: 77px 0 34px;
+    margin-bottom: 47px;
+  }
+
   .hero__welcome {
     width: 461px;
     height: 350px;
-    margin: 77px auto 34px;
+    margin: 0 auto;
   }
 
-  .hero__wrapper {
-    margin-bottom: 47px;
+  @media (min-resolution: 2dppx) {
+    .hero__wrapper {
+      background-image: url("../../img/index/hero-background-tablet@2x.jpg");
+    }
   }
 
   .hero__heading {
@@ -78,14 +94,22 @@
 // Desktop
 
 @media (min-width: $desktop-width) {
+  .hero__wrapper {
+    background-image: url("../../img/index/hero-background-desktop.jpg");
+    margin-bottom: 59px;
+    padding: 78px 0 33px;
+  }
+
   .hero__welcome {
     width: 460px;
     height: 350px;
-    margin: 78px auto 33px;
+    margin: 0 auto;
   }
 
-  .hero__wrapper {
-    margin-bottom: 59px;
+  @media (min-resolution: 2dppx) {
+    .hero__wrapper {
+      background-image: url("../../img/index/hero-background-desktop@2x.jpg");
+    }
   }
 
   .hero__heading {
