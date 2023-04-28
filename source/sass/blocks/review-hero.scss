@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 0 36px 0;
-  padding: 52px 0 10px;
+  padding: 52px 0 67px;
 }
 
 @media (min-resolution: 2dppx) {
@@ -37,7 +37,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-black;
-  margin: 0 0 24px 0;
+  margin: 0 0 25px 0;
   padding: 0;
 }
 
@@ -64,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .review-hero__wrapper {
     background-image: url("../../img/index/hero-background-tablet.jpg");
-    padding: 95px 0 60px;
+    padding: 95px 0 117px;
     margin-bottom: 64px;
   }
 
@@ -102,7 +102,8 @@
   .review-hero__wrapper {
     background-image: url("../../img/index/hero-background-desktop.jpg");
     margin-bottom: 115px;
-    padding: 101px 0 63px;
+    padding: 101px 0 120px;
+    background-position: 0 -217px;
   }
 
   .review-hero__welcome {

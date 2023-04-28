@@ -20,7 +20,7 @@
 }
 
 .form__fieldset--grid-impression {
-  padding: 24px 0;
+  padding: 27px 0 25px;
 }
 
 .form__fieldset--grid-attractions {
@@ -92,6 +92,7 @@
   margin: 0;
   padding: 0;
   margin-left: 16px;
+  text-transform: uppercase;
 }
 
 .form__input-text {
@@ -114,46 +115,54 @@
   margin: 0;
   padding: 0;
   margin-left: 16px;
+  text-transform: uppercase;
 }
 
 .form__input-icon {
   display: flex;
-  flex-grow: 1;
   font-family: inherit;
   background-color: $color-light-grey;
   min-height: 58px;
+  width: 100%;
   border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
   padding-left: 16px;
+  position: relative;
+}
+
+.form__wrapper-phone {
+  position: relative;
+}
+
+.form__wrapper-email {
+  position: relative;
 }
 
 .form__icon-email {
-  min-width: 58px;
-  min-height: 58px;
+  width: 58px;
+  height: 58px;
   background-color: #e6e6e6;
   background-image: url("../img/form/mail.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .form__icon-phone {
-  min-width: 58px;
-  min-height: 58px;
+  width: 58px;
+  height: 58px;
   background-color: #e6e6e6;
   background-image: url("../img/form/phone.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.form__wrapper-phone {
-  display: flex;
-}
-
-.form__wrapper-email {
-  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .form__radio-item {
@@ -176,6 +185,7 @@
   width: 46px;
   height: 46px;
   background-color: $color-light-grey;
+  margin: 0;
 }
 
 .form__checkbox-item {
@@ -197,6 +207,7 @@
 .form__checkbox-input {
   width: 46px;
   height: 46px;
+  margin: 0;
 }
 
 .form__textarea {
@@ -214,7 +225,7 @@
   margin-bottom: 56px;
   outline: none;
   width: 100%;
-  padding: 16px;
+  padding: 16px 16px 4px 16px;
 }
 
 .form__submit {
@@ -228,14 +239,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 3px;
-  padding: 0;
+  padding: 0 30px;
 }
 
 .form__clue {
   display: flex;
   margin: 0;
   margin-left: auto;
-  margin-right: 20px;
   color: rgba(51, 51, 51, 0.6);
   font-weight: 400;
   font-size: 12px;
@@ -301,7 +311,6 @@
     font-size: 21px;
     margin: 0 auto 28px;
     max-width: 379px;
-    padding: 0 19px;
   }
 
   .form__fieldset--after {
@@ -391,13 +400,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 42px;
     padding: 0 84px;
+    gap: 0;
+    row-gap: 16px;
   }
 
   .form__checkbox-item {
     min-width: 200px;
+  }
+
+  .form__checkbox-item:nth-child(2n) {
+    margin-left: 55px;
   }
 
   .form__radio-list {
@@ -412,6 +426,7 @@
 
   .form__textarea {
     margin: 0;
+    padding-bottom: 15px;
   }
 
   .form__submit {
@@ -430,7 +445,7 @@
     align-items: center;
     font-size: 14px;
     min-height: 21px;
-    margin: 0 0 0 auto;
+    margin: 11px 0 0 auto;
   }
 }
 
@@ -442,17 +457,35 @@
   }
 
   .form__checkbox-list {
+    justify-content: center;
     margin-bottom: 56px;
-    padding: 0;
+    padding: 33px 0 30px;
+    column-gap: 64px;
+  }
+
+  .form__checkbox-item:nth-child(2n) {
+    margin-left: 0;
   }
 
   .form__radio-list {
-    margin-bottom: 56px;
-    padding: 0;
+    margin-bottom: 54px;
+    padding: 18px 36px;
+  }
+
+  .form__radio-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__checkbox-item {
+    display: flex;
+    justify-content: center;
+    min-width: 150px;
   }
 
   .form__fieldset--grid-name {
     padding-right: 50px;
+    margin-bottom: 71px;
   }
 
   .form__fieldset--grid-contacts {
@@ -468,7 +501,7 @@
   }
 
   .form__clue {
-    margin: 0 96px 0 auto;
+    margin: 11px 96px 0 auto;
   }
 
   .form__fieldset--grid-impression .form__legend--psevdo::before {
@@ -529,5 +562,9 @@
     background-color: #e5e5e5;
     top: 50%;
     left: 100%;
+  }
+
+  .form__textarea {
+    padding-bottom: 14px;
   }
 }
