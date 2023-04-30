@@ -335,6 +335,15 @@
   border-radius: 50%;
   background-color: #f2f2f2;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .form__radio-input[type="radio"]:checked + .form__radio-mark::before,
@@ -349,6 +358,16 @@
   content: "";
 }
 
+.form__radio-input[type="radio"]:disabled + .form__radio-mark {
+  background-color: #d5d5d5;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.form__radio-input[type="radio"]:disabled + .form__radio-mark + .form__radio-title {
+  opacity: 0.3;
+}
+
 .form__checkbox-mark {
   width: 46px;
   height: 46px;
@@ -356,6 +375,15 @@
   border-radius: 4px;
   background-color: #f2f2f2;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .form__checkbox-input[type="checkbox"]:checked + .form__checkbox-mark::before,
@@ -367,6 +395,16 @@
   width: 22px;
   height: 16px;
   content: "";
+}
+
+.form__checkbox-input[type="checkbox"]:disabled + .form__checkbox-mark {
+  background-color: #d5d5d5;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.form__checkbox-input[type="checkbox"]:disabled + .form__checkbox-mark + .form__checkbox-title {
+  opacity: 0.3;
 }
 
 // Tablet
