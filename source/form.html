@@ -93,19 +93,22 @@
               <ul class="form__radio-list form__radio-list--before form__radio-list--after">
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" value="positive" name="impression" checked>
+                    <input class="form__radio-input visually-hidden" type="radio" value="positive" name="impression" checked>
+                    <span class="form__radio-mark"></span>
                     Скорее положительное
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" value="negative" name="impression">
+                    <input class="form__radio-input visually-hidden" type="radio" value="negative" name="impression">
+                    <span class="form__radio-mark"></span>
                     Скорее отрицательное
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" value="undefined" name="impression">
+                    <input class="form__radio-input visually-hidden" type="radio" value="undefined" name="impression">
+                    <span class="form__radio-mark"></span>
                     Затрудняюсь ответить
                   </label>
                 </li>
@@ -116,25 +119,29 @@
               <ul class="form__checkbox-list form__checkbox-list--before form__checkbox-list--after">
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" value="positive" name="devil-bridge" checked>
+                    <input class="form__checkbox-input visually-hidden" type="checkbox" value="positive" name="devil-bridge" checked>
+                    <span class="form__checkbox-mark"></span>
                     Мост Дьявола
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" value="positive" name="mountain-bell" checked>
+                    <input class="form__checkbox-input visually-hidden" type="checkbox" value="positive" name="mountain-bell" checked>
+                    <span class="form__checkbox-mark"></span>
                     Гора-Колокол
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" value="positive" name="slide-park" checked>
+                    <input class="form__checkbox-input visually-hidden" type="checkbox" value="positive" name="slide-park" checked>
+                    <span class="form__checkbox-mark"></span>
                     Слайд-парк
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" value="positive" name="red-rocks">
+                    <input class="form__checkbox-input visually-hidden" type="checkbox" value="positive" name="red-rocks">
+                    <span class="form__checkbox-mark"></span>
                     Красные скалы
                   </label>
                 </li>
@@ -157,7 +164,7 @@
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48">
+                <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
                   <use href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -165,7 +172,7 @@
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграм</span>
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48">
+                <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
                   <use href="img/sprite.svg#icon-tg"></use>
                 </svg>
               </a>
@@ -173,7 +180,7 @@
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48">
+                <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14">
                   <use href="img/sprite.svg#icon-yt"></use>
                 </svg>
               </a>
@@ -188,7 +195,7 @@
         </a>
       </footer>
       <!-- Для того, чтобы открыть модальное окно, нужно добавить класс "is-active" -->
-      <div class="modal is-active">
+      <div class="modal">
         <div class="modal__error">
           <h2 class="modal__title">Что-то пошло не так!</h2>
           <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>

@@ -9,12 +9,36 @@
   text-transform: uppercase;
 }
 
+.footer__link-logo {
+  fill: $color-black;
+}
+
 .footer__link-academy {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   gap: 12px;
+
+  &:hover {
+    .footer__link-text {
+      color: $color-blue;
+    }
+
+    .footer__link-logo {
+      fill: $color-blue;
+    }
+  }
+
+  &:active {
+    .footer__link-text {
+      color: #b3b3b3;
+    }
+
+    .footer__link-logo {
+      fill: #b3b3b3;
+    }
+  }
 }
 
 .footer__link-text {

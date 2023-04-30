@@ -28,6 +28,10 @@
   color: $color-black;
   margin: 0;
   padding: 0;
+
+  br {
+    display: none;
+  }
 }
 
 .gallery__image-author {
@@ -117,6 +121,10 @@
 
   .gallery__card-title {
     max-width: 230px;
+
+    br {
+      display: block;
+    }
   }
 
   .gallery__like-text {
@@ -176,6 +184,14 @@
   .gallery__image-author {
     margin: 0;
   }
+
+  .gallery__wrapper--tablet {
+    padding-top: 2px;
+  }
+
+  .gallery__like-text--tablet {
+    padding: 18px 0 0 0;
+  }
 }
 
 // Desktop
@@ -188,11 +204,20 @@
   .gallery__card-title {
     max-width: 280px;
     color: $color-white;
+
+    br {
+      display: none;
+    }
   }
 
   .gallery__like-text {
     max-width: 80px;
     color: $color-white;
+    padding: 0;
+  }
+
+  .gallery__like-text--tablet {
+    padding: 0 0 8px 0;
   }
 
   .gallery__cards {
@@ -201,7 +226,8 @@
   }
 
   .gallery__wrapper {
-    background: transparent;
+    background: rgba($color-black, 0.3);
+    padding: 17px 20px 17px 25px;
   }
 
   .gallery__card--grid-spaces {
@@ -261,5 +287,13 @@
 
   .gallery__like-icon {
     fill: $color-white;
+  }
+
+  .gallery__wrapper--tablet {
+    padding: 22px 20px 15px 21px;
+  }
+
+  .gallery__title-wrapper--gap {
+    gap: 4px;
   }
 }

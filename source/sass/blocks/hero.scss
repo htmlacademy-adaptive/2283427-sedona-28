@@ -3,12 +3,23 @@
   background-color: $color-blue;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 33px;
   padding: 90px 0 85px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("../../img/index/hero-divider.svg") no-repeat center;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -24,6 +35,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .hero__welcome {
@@ -61,8 +73,20 @@
 @media (min-width: $tablet-width) {
   .hero__wrapper {
     background-image: url("../../img/index/hero-background-tablet.jpg");
+    background-position: 0 0;
     padding: 77px 0 91px;
     margin-bottom: 48px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../../img/index/hero-divider.svg") no-repeat center;
+      width: 100%;
+      height: 57px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   .hero__welcome {
@@ -97,8 +121,20 @@
 @media (min-width: $desktop-width) {
   .hero__wrapper {
     background-image: url("../../img/index/hero-background-desktop.jpg");
+    background-position: 0 0;
     margin-bottom: 59px;
     padding: 78px 0 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../../img/index/hero-divider.svg") no-repeat center;
+      width: 100%;
+      height: 57px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   .hero__welcome {
