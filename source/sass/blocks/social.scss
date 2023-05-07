@@ -15,7 +15,7 @@
 }
 
 .social__icon {
-  fill: $color-white;
+  color: $color-white;
 }
 
 .social__link {
@@ -34,7 +34,7 @@
     background-color: #5496bd;
 
     .social__icon {
-      fill: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 }
