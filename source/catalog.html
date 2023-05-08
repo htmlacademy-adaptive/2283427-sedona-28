@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="img/favicons/32.png">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
@@ -52,6 +52,9 @@
           <ul class="gallery__cards">
             <li class="gallery__card gallery__card--before gallery__card--after gallery__card--grid-spaces">
               <picture class="gallery__picture gallery__picture--spaces">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road-desktop.webp 1x, img/catalog/gallery-content-road-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road-tablet.webp 1x, img/catalog/gallery-content-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road.webp 1x, img/catalog/gallery-content-road@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-road-desktop.jpg 1x, img/catalog/gallery-content-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-road-tablet.jpg 1x, img/catalog/gallery-content-road-tablet@2x.jpg 2x">
                 <img class="gallery__image gallery__image--grid-spaces" src="img/catalog/gallery-content-road.jpg" srcset="img/catalog/gallery-content-road@2x.jpg 2x" width="280" height="280" alt="Дорога в закате.">
@@ -71,6 +74,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-plants">
               <picture class="gallery__picture">
+                <source type="image/webp" srcset="img/catalog/gallery-content-plants-desktop.webp 1x, img/catalog/gallery-content-plants-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-plants-tablet.webp 1x, img/catalog/gallery-content-plants-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-plants.webp 1x, img/catalog/gallery-content-plants@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-plants-desktop.jpg 1x, img/catalog/gallery-content-plants-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-plants-tablet.jpg 1x, img/catalog/gallery-content-plants-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-plants.jpg" srcset="img/catalog/gallery-content-plants@2x.jpg 2x" width="280" height="280" alt="Растение.">
@@ -90,6 +96,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-road">
               <picture class="gallery__picture">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north-desktop.webp 1x, img/catalog/gallery-content-road-to-north-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north-tablet.webp 1x, img/catalog/gallery-content-road-to-north-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north.webp 1x, img/catalog/gallery-content-road-to-north@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-road-to-north-desktop.jpg 1x, img/catalog/gallery-content-road-to-north-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-road-to-north-tablet.jpg 1x, img/catalog/gallery-content-road-to-north-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-road-to-north.jpg" srcset="img/catalog/gallery-content-road-to-north@2x.jpg 2x" width="280" height="280" alt="Дорога в горах.">
@@ -109,6 +118,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-bridge">
               <picture class="gallery__picture">
+                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-desktop.webp 1x, img/catalog/gallery-content-devils-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-tablet.webp 1x, img/catalog/gallery-content-devils-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge.webp 1x, img/catalog/gallery-content-devils-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-devils-bridge-desktop.jpg 1x, img/catalog/gallery-content-devils-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-devils-bridge-tablet.jpg 1x, img/catalog/gallery-content-devils-bridge-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-devils-bridge.jpg" srcset="img/catalog/gallery-content-devils-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
@@ -155,7 +167,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
-                  <use href="img/sprite.svg#icon-vk"></use>
+                  <use href="img/sprite.svg#logo-vk"></use>
                 </svg>
               </a>
             </li>
@@ -163,7 +175,7 @@
               <a class="social__link" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграм</span>
                 <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
-                  <use href="img/sprite.svg#icon-tg"></use>
+                  <use href="img/sprite.svg#logo-tg"></use>
                 </svg>
               </a>
             </li>
@@ -171,7 +183,7 @@
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
                 <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14">
-                  <use href="img/sprite.svg#icon-yt"></use>
+                  <use href="img/sprite.svg#logo-yt"></use>
                 </svg>
               </a>
             </li>
@@ -180,7 +192,7 @@
         <a class="footer__link-academy" href="https://htmlacademy.ru">
           <span class="footer__link-text">Разработано</span>
           <svg class="footer__link-logo" width="27" height="35" viewBox="0 0 27 35">
-            <use href="img/sprite.svg#html-academy"></use>
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </footer>

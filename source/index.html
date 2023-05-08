@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="img/favicons/32.png">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
@@ -59,6 +59,9 @@
                 <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
               </div>
               <picture class="advantages__picture advantages__picture--grid">
+                <source type="image/webp" srcset="img/index/description-house-desktop.webp 1x, img/index/description-house-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/description-house-tablet.webp 1x, img/index/description-house-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/description-house.webp 1x, img/index/description-house@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/index/description-house-desktop.jpg 1x, img/index/description-house-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/index/description-house-tablet.jpg 1x, img/index/description-house-tablet@2x.jpg 2x">
                 <img class="advantages__image advantages__image--grid" src="img/index/description-house.jpg" srcset="img/index/description-house@2x.jpg 2x" width="320" height="260" alt="Здание с американским флагом.">
@@ -140,7 +143,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14">
-                  <use href="img/sprite.svg#icon-vk"></use>
+                  <use href="img/sprite.svg#logo-vk"></use>
                 </svg>
               </a>
             </li>
@@ -148,7 +151,7 @@
               <a class="social__link" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграм</span>
                 <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
-                  <use href="img/sprite.svg#icon-tg"></use>
+                  <use href="img/sprite.svg#logo-tg"></use>
                 </svg>
               </a>
             </li>
@@ -156,7 +159,7 @@
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
                 <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14">
-                  <use href="img/sprite.svg#icon-yt"></use>
+                  <use href="img/sprite.svg#logo-yt"></use>
                 </svg>
               </a>
             </li>
@@ -165,7 +168,7 @@
         <a class="footer__link-academy" href="https://htmlacademy.ru">
           <span class="footer__link-text">Разработано</span>
           <svg class="footer__link-logo" width="27" height="35" viewBox="0 0 27 35">
-            <use href="img/sprite.svg#html-academy"></use>
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </footer>

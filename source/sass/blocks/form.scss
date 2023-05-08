@@ -4,7 +4,7 @@
 
 .form__fieldset {
   border: 0;
-  margin: 0;
+  margin: 0 -20px;
   padding: 0;
   position: relative;
   display: flex;
@@ -28,7 +28,7 @@
 }
 
 .form__fieldset--grid-emotions {
-  padding: 24px 0 0;
+  padding: 24px 20px 0;
 }
 
 .form__fieldset--before::before {
@@ -55,7 +55,7 @@
 .form__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -68,7 +68,7 @@
   gap: 16px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .form__checkbox-list {
@@ -77,7 +77,7 @@
   gap: 16px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .form__item {
@@ -410,6 +410,14 @@
 // Tablet
 
 @media (min-width: $tablet-width) {
+  .form__list {
+    padding: 0;
+  }
+
+  .form__fieldset {
+    margin: 0;
+  }
+
   .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
