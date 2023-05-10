@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -52,9 +54,9 @@
           <ul class="gallery__cards">
             <li class="gallery__card gallery__card--before gallery__card--after gallery__card--grid-spaces">
               <picture class="gallery__picture gallery__picture--spaces">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road-desktop.webp 1x, img/catalog/gallery-content-road-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road-tablet.webp 1x, img/catalog/gallery-content-road-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road.webp 1x, img/catalog/gallery-content-road@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/gallery-content-road-desktop.webp 1x, img/catalog/gallery-content-road-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/gallery-content-road-tablet.webp 1x, img/catalog/gallery-content-road-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/catalog/gallery-content-road.webp 1x, img/catalog/gallery-content-road@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-road-desktop.jpg 1x, img/catalog/gallery-content-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-road-tablet.jpg 1x, img/catalog/gallery-content-road-tablet@2x.jpg 2x">
                 <img class="gallery__image gallery__image--grid-spaces" src="img/catalog/gallery-content-road.jpg" srcset="img/catalog/gallery-content-road@2x.jpg 2x" width="280" height="280" alt="Дорога в закате.">
@@ -74,9 +76,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-plants">
               <picture class="gallery__picture">
-                <source type="image/webp" srcset="img/catalog/gallery-content-plants-desktop.webp 1x, img/catalog/gallery-content-plants-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-plants-tablet.webp 1x, img/catalog/gallery-content-plants-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-plants.webp 1x, img/catalog/gallery-content-plants@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/gallery-content-plants-desktop.webp 1x, img/catalog/gallery-content-plants-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/gallery-content-plants-tablet.webp 1x, img/catalog/gallery-content-plants-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/catalog/gallery-content-plants.webp 1x, img/catalog/gallery-content-plants@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-plants-desktop.jpg 1x, img/catalog/gallery-content-plants-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-plants-tablet.jpg 1x, img/catalog/gallery-content-plants-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-plants.jpg" srcset="img/catalog/gallery-content-plants@2x.jpg 2x" width="280" height="280" alt="Растение.">
@@ -96,9 +98,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-road">
               <picture class="gallery__picture">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north-desktop.webp 1x, img/catalog/gallery-content-road-to-north-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north-tablet.webp 1x, img/catalog/gallery-content-road-to-north-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-road-to-north.webp 1x, img/catalog/gallery-content-road-to-north@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/gallery-content-road-to-north-desktop.webp 1x, img/catalog/gallery-content-road-to-north-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/gallery-content-road-to-north-tablet.webp 1x, img/catalog/gallery-content-road-to-north-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/catalog/gallery-content-road-to-north.webp 1x, img/catalog/gallery-content-road-to-north@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-road-to-north-desktop.jpg 1x, img/catalog/gallery-content-road-to-north-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-road-to-north-tablet.jpg 1x, img/catalog/gallery-content-road-to-north-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-road-to-north.jpg" srcset="img/catalog/gallery-content-road-to-north@2x.jpg 2x" width="280" height="280" alt="Дорога в горах.">
@@ -118,9 +120,9 @@
             </li>
             <li class="gallery__card gallery__card--before gallery__card--grid-bridge">
               <picture class="gallery__picture">
-                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-desktop.webp 1x, img/catalog/gallery-content-devils-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-tablet.webp 1x, img/catalog/gallery-content-devils-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/gallery-content-devils-bridge.webp 1x, img/catalog/gallery-content-devils-bridge@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-desktop.webp 1x, img/catalog/gallery-content-devils-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/gallery-content-devils-bridge-tablet.webp 1x, img/catalog/gallery-content-devils-bridge-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/catalog/gallery-content-devils-bridge.webp 1x, img/catalog/gallery-content-devils-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/gallery-content-devils-bridge-desktop.jpg 1x, img/catalog/gallery-content-devils-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/gallery-content-devils-bridge-tablet.jpg 1x, img/catalog/gallery-content-devils-bridge-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="img/catalog/gallery-content-devils-bridge.jpg" srcset="img/catalog/gallery-content-devils-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">

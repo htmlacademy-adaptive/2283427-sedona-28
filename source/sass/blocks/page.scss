@@ -14,10 +14,16 @@
   padding: 0;
 }
 
+.page__wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+}
+
 .page__main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .page__footer {
