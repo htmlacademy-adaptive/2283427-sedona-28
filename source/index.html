@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="body page__body">
     <div class="page__wrapper">
@@ -59,9 +61,9 @@
                 <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
               </div>
               <picture class="advantages__picture advantages__picture--grid">
-                <source type="image/webp" srcset="img/index/description-house-desktop.webp 1x, img/index/description-house-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/index/description-house-tablet.webp 1x, img/index/description-house-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/index/description-house.webp 1x, img/index/description-house@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/index/description-house-desktop.webp 1x, img/index/description-house-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/index/description-house-tablet.webp 1x, img/index/description-house-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/index/description-house.webp 1x, img/index/description-house@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/index/description-house-desktop.jpg 1x, img/index/description-house-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/index/description-house-tablet.jpg 1x, img/index/description-house-tablet@2x.jpg 2x">
                 <img class="advantages__image advantages__image--grid" src="img/index/description-house.jpg" srcset="img/index/description-house@2x.jpg 2x" width="320" height="260" alt="Здание с американским флагом.">
@@ -89,9 +91,9 @@
             </li>
             <li class="advantages__item advantages__item--blue advantages__item--grid-bridge">
               <picture class="advantages__picture advantages__picture--grid-bridge">
-                <source type="image/webp" srcset="img/index/description-canyon-desktop.webp 1x, img/index/description-canyon-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/index/description-canyon-tablet.webp 1x, img/index/description-canyon-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/index/description-canyon.webp 1x, img/index/description-canyon@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/index/description-canyon-desktop.webp 1x, img/index/description-canyon-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/index/description-canyon-tablet.webp 1x, img/index/description-canyon-tablet@2x.webp 2x">
+                <source media="(max-width: 767.98px)" type="image/webp" srcset="img/index/description-canyon.webp 1x, img/index/description-canyon@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/index/description-canyon-desktop.jpg 1x, img/index/description-canyon-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/index/description-canyon-tablet.jpg 1x, img/index/description-canyon-tablet@2x.jpg 2x">
                 <img class="advantages__image advantages__image--grid-bridge" src="img/index/description-canyon.jpg" srcset="img/index/description-canyon@2x.jpg 2x" width="320" height="260" alt="Гранд-Каньон.">
