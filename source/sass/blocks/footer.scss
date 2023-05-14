@@ -12,6 +12,7 @@
 
 .footer__link-logo {
   color: $color-black;
+  flex-shrink: 0;
 }
 
 .footer__link-academy {

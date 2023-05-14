@@ -1,3 +1,8 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .header__logo {
   display: flex;
   justify-content: center;
@@ -13,5 +18,13 @@
   width: 185px;
   height: 96px;
   position: absolute;
-  z-index: 5;
+  z-index: 1;
+}
+
+// Tablet
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    z-index: 6;
+  }
 }
