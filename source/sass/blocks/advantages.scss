@@ -169,6 +169,10 @@
 
 .advantages__title--white {
   color: $color-white;
+
+  br {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -349,6 +353,14 @@
   .advantages__wrapper--grid-bridge {
     grid-column: 3 / -1;
     padding: 53px 18px 29px;
+  }
+
+  .advantages__title--white {
+    letter-spacing: -0.09px;
+
+    br {
+      display: block;
+    }
   }
 
   .advantages__description--white {
