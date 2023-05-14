@@ -194,7 +194,6 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 587px 256px 256px;
   }
 
   .advantages__item--grid-city {
@@ -246,7 +245,7 @@
 
   .advantages__number {
     max-width: 190px;
-    margin: 0 0 23px;
+    margin: 0 0 25px;
   }
 
   .advantages__description {
@@ -344,12 +343,12 @@
   .advantages__wrapper--grid {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 53px 18px 31px;
+    padding: 53px 18px 29px;
   }
 
   .advantages__wrapper--grid-bridge {
     grid-column: 3 / -1;
-    padding: 53px 18px 31px;
+    padding: 53px 18px 29px;
   }
 
   .advantages__description--white {

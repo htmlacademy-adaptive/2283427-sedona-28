@@ -60,6 +60,7 @@
   color: $color-black;
   margin: 0;
   padding: 7px 0 0 0;
+  max-width: 70px;
 }
 
 .gallery__like-icon {
@@ -182,6 +183,7 @@
 
   .gallery__image-author {
     margin: 0;
+    max-width: 230px;
   }
 
   .gallery__wrapper--tablet {
