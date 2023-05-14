@@ -15,7 +15,6 @@
   background-color: $color-blue;
   margin: 25px auto 8px;
   object-fit: cover;
-  height: 100%;
   width: 100%;
 }
 
@@ -61,6 +60,7 @@
   color: $color-black;
   margin: 0;
   padding: 7px 0 0 0;
+  max-width: 70px;
 }
 
 .gallery__like-icon {
@@ -183,6 +183,7 @@
 
   .gallery__image-author {
     margin: 0;
+    max-width: 230px;
   }
 
   .gallery__wrapper--tablet {

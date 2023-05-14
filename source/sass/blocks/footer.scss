@@ -7,6 +7,7 @@
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
+  max-width: 140px;
 }
 
 .footer__link-logo {
@@ -19,6 +20,7 @@
   align-items: center;
   text-decoration: none;
   gap: 12px;
+  max-width: 135px;
 
   &:hover {
     .footer__link-text {

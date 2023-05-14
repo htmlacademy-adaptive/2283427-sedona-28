@@ -50,6 +50,7 @@
   text-transform: uppercase;
   margin: 0 auto 20px;
   padding: 0;
+  max-width: 280px;
 }
 
 .form__list {
@@ -93,6 +94,20 @@
   padding: 0;
   margin-left: 16px;
   text-transform: uppercase;
+}
+
+.form__radio-title {
+  max-width: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__checkbox-title {
+  max-width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__input-text {
@@ -213,7 +228,6 @@
 .form__radio-label {
   display: flex;
   justify-content: start;
-  align-items: center;
   gap: 16px;
   font-weight: 700;
   font-size: 18px;
@@ -236,7 +250,6 @@
 .form__checkbox-label {
   display: flex;
   justify-content: start;
-  align-items: center;
   gap: 16px;
   font-weight: 700;
   font-size: 18px;
@@ -326,6 +339,7 @@
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
+  max-width: 200px;
 }
 
 .form__radio-mark {
@@ -640,11 +654,13 @@
   .form__radio-item {
     display: flex;
     justify-content: center;
+    align-items: baseline;
   }
 
   .form__checkbox-item {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     min-width: 150px;
   }
 
