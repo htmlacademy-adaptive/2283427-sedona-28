@@ -450,6 +450,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 0 0 0 28px;
+    margin: 0 0 63px 0;
   }
 
   .form__fieldset--grid-impression {
@@ -561,6 +562,10 @@
     background-color: #e5e5e5;
     top: 50%;
     right: 100%;
+  }
+
+  .form__input-label {
+    max-width: 300px;
   }
 
   .form__fieldset--grid-emotions .form__legend--psevdo::after {
