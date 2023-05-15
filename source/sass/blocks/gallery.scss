@@ -13,9 +13,10 @@
 
 .gallery__image {
   background-color: $color-blue;
-  margin: 25px auto 8px;
+  margin: 25px auto 14px;
   object-fit: cover;
   width: 100%;
+  display: block;
 }
 
 .gallery__card-title {
@@ -92,6 +93,12 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.gallery__link-image {
+  &:focus {
+    outline: 2px solid $color-blue;
+  }
 }
 
 // Tablet
